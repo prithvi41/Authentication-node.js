@@ -21,6 +21,7 @@ class Note {
         }
         catch(e) {
             console.error(e.message);
+            throw new Error("Failed to save note");
             return false;
         }
     }
